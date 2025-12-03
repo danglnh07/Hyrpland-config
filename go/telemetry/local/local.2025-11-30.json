@@ -1,0 +1,208 @@
+{
+ "Week": "2025-11-30",
+ "LastWeek": "",
+ "X": 0.6605351284524432,
+ "Programs": [
+  {
+   "Program": "cmd/asm",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "asm/flag:D": 8,
+    "asm/flag:I": 8,
+    "asm/flag:gensymabis": 4,
+    "asm/flag:o": 8,
+    "asm/flag:p": 8,
+    "asm/flag:trimpath": 8,
+    "asm/invocations": 8
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/cgo",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "cgo/flag:dynimport": 2,
+    "cgo/flag:dynout": 2,
+    "cgo/flag:dynpackage": 2,
+    "cgo/flag:importpath": 2,
+    "cgo/flag:ldflags": 2,
+    "cgo/flag:objdir": 2,
+    "cgo/invocations": 4
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/compile",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "compile/flag:asmhdr": 4,
+    "compile/flag:buildid": 287,
+    "compile/flag:c": 287,
+    "compile/flag:complete": 282,
+    "compile/flag:coveragecfg": 10,
+    "compile/flag:dwarf": 38,
+    "compile/flag:embedcfg": 1,
+    "compile/flag:goversion": 287,
+    "compile/flag:importcfg": 287,
+    "compile/flag:lang": 287,
+    "compile/flag:nolocalimports": 287,
+    "compile/flag:o": 287,
+    "compile/flag:p": 287,
+    "compile/flag:pack": 287,
+    "compile/flag:std": 1,
+    "compile/flag:symabis": 4,
+    "compile/flag:trimpath": 287,
+    "compile/invocations": 684
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/covdata",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "covdata/flag:i": 30,
+    "covdata/flag:o": 15,
+    "covdata/invocations": 30
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/cover",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "cover/flag:mode": 10,
+    "cover/flag:outfilelist": 10,
+    "cover/flag:pkgcfg": 10,
+    "cover/flag:var": 10,
+    "cover/invocations": 10
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/go",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "go/buildcache/hit": 79653,
+    "go/buildcache/miss": 16680,
+    "go/buildcache/stdlib-recompiled": 37,
+    "go/env/flag:json": 22,
+    "go/goroot:usr-lib-go": 2537,
+    "go/invocations": 2537,
+    "go/list/flag:compiled": 321,
+    "go/list/flag:deps": 321,
+    "go/list/flag:e": 671,
+    "go/list/flag:export": 321,
+    "go/list/flag:f": 674,
+    "go/list/flag:find": 321,
+    "go/list/flag:json": 337,
+    "go/list/flag:m": 32,
+    "go/list/flag:mod": 16,
+    "go/list/flag:overlay": 843,
+    "go/list/flag:pgo": 321,
+    "go/list/flag:test": 321,
+    "go/mod-tidy/flag:modfile": 1088,
+    "go/mode:gopath": 396,
+    "go/mode:module": 2141,
+    "go/platform/host/linux/major-version:6": 2537,
+    "go/platform/host/linux/version:6-17": 2537,
+    "go/platform/target/goamd64:v1": 2537,
+    "go/platform/target/goarch:amd64": 2537,
+    "go/platform/target/goos:linux": 2537,
+    "go/subcommand:env": 38,
+    "go/subcommand:list": 1011,
+    "go/subcommand:mod-init": 3,
+    "go/subcommand:mod-tidy": 1096,
+    "go/subcommand:test": 49,
+    "go/subcommand:tool-covdata": 30,
+    "go/subcommand:version": 310
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/gofmt",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "gofmt/invocations": 817
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "golang.org/x/tools/gopls",
+   "Version": "v0.20.0",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "gopls/client:neovim": 11,
+    "gopls/completion/latency:\u003c100ms": 68,
+    "gopls/completion/latency:\u003c10ms": 18764,
+    "gopls/completion/latency:\u003c200ms": 1428,
+    "gopls/completion/latency:\u003c50ms": 2006,
+    "gopls/completion/len:0": 11810,
+    "gopls/completion/len:\u003c=10": 7790,
+    "gopls/completion/len:\u003e10": 2680,
+    "gopls/completion/used:no": 13021,
+    "gopls/completion/used:yes": 1,
+    "gopls/gotoolchain:auto": 11,
+    "gopls/goversion:1.25": 9,
+    "gopls/hover/latency:\u003c10ms": 24,
+    "gopls/setting/analyses/unusedparams:true": 31,
+    "gopls/setting/completeUnimported:true": 31,
+    "gopls/telemetryprompt/attempts:0": 11
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/link",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "link/flag:X": 61,
+    "link/flag:buildid": 61,
+    "link/flag:buildmode": 61,
+    "link/flag:extld": 61,
+    "link/flag:importcfg": 61,
+    "link/flag:o": 61,
+    "link/flag:s": 61,
+    "link/flag:w": 61,
+    "link/invocations": 219
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/vet",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "vet/invocations": 444
+   },
+   "Stacks": {}
+  }
+ ],
+ "Config": "v0.0.0-0"
+}

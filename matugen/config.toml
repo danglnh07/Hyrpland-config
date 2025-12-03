@@ -1,0 +1,43 @@
+[config]
+
+[config.theme]
+type = "light_dark"     # "light", "dark", or "light_dark"
+mode = "dark"           # default mode
+saturation = 0.90
+
+[config.theme.lightness]
+light = 0.65
+dark = 0.45
+
+# ==============================
+#  Template Targets
+# ==============================
+[templates]
+
+# ---- Hyprland ---- 
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland.colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
+# ---- Waybar ----
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar.css.template'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+# ---- Rofi ----
+[templates.rofi]
+input_path = "~/.config/matugen/templates/rofi.rasi.template"
+output_path = "~/.config/rofi/colors.rasi"
+
+# ---- btop ----
+[templates.btop]
+input_path = "~/.config/matugen/templates/btop.theme.template"
+output_path = "~/.config/btop/themes/matugen.theme"
+
+# ---- wlogout ----
+[templates.wlogout]
+input_path = '~/.config/matugen/templates/color.css'
+output_path = '~/.config/wlogout/colors.css'
+

@@ -1,0 +1,222 @@
+@import "~/.config/rofi/colors.rasi"
+
+configuration {
+    modes: "window,drun,run,ssh,filebrowser";
+    show-icons:                 true;
+    display-drun:               "Apps";
+    display-run:                "Run";
+    display-filebrowser:        "Files";
+    display-window:             "Windows";
+	drun-display-format:        "{name}";
+	hover-select:               true;
+	me-select-entry:            "MouseSecondary";
+    me-accept-entry:            "MousePrimary";
+	window-format:              "{w} · {c} · {t}";
+	dpi:						1;
+}
+
+// @theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+/* ---- Window ---- */
+window {
+    // Default
+    enabled:                    true;
+    fullscreen:                 false;
+    transparency:               "real";
+    cursor:                     "default";
+    spacing:                    0px;
+    border:                     2px;
+    border-radius:              30px;
+    location:                   center;
+    anchor:                     center;
+
+    // Style Values
+    width:                      80%;
+    background-color:           @surface-container-highest;
+    border-color:               @primary;
+    text-color:                 @on-surface;
+}
+
+/* ----- Main Box ----- */
+mainbox {
+	padding:					 15px;
+    enabled:                     true;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "listbox" ];
+    background-color:            transparent;
+    text-color:                  @on-surface;
+}
+
+
+/* ---- Inputbar ---- */
+inputbar {
+    enabled:                     true;
+    padding:                     10px 10px 100px 10px;
+    margin:                      10px;
+    background-color:            transparent;
+    border-radius:               25px;
+    orientation:                 horizontal;
+    background-color:            @surface-container;
+    border-color:                @outline-variant;
+    children:                    ["entry", "dummy", "mode-switcher" ];
+    background-image:            url("~/Pictures/wallpapers/anime_skull.png", width);
+}
+
+/* ---- Entry input ---- */
+entry {
+    enabled:                     true;
+    expand:                      false;
+    width:                       20%;
+    padding:                     10px;
+    border-radius:               12px;
+    cursor:                      text;
+    placeholder:                 "  Search "; // << Search symbol
+    background-color:            @surface-container-low;
+    text-color:                  @on-surface;
+    border-color:                @primary;
+}
+
+/* ---- Listbox ---- */
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+/* ---- Listview ---- */
+listview {
+    enabled:                     true;
+    columns:                     2;
+    lines:                       6;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   true;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                false;
+    fixed-columns:               true;    
+    spacing:                     10px;
+    background-color:            transparent;
+
+//  Adapt rofi theme
+    border:                      0px;
+}
+
+/* ---- Dummy ---- */
+dummy {
+    expand:                      true;
+    background-color:            transparent;
+}
+
+/* ---- Mode Switcher ---- */
+mode-switcher{
+    enabled:                     true;
+    spacing:                     10px;
+    border-radius:               12px;
+    background-color:            @surface-container-low;
+}
+button {
+    width:                       5%;
+    padding:                     12px;
+    border-radius:               12px;
+    cursor:                      pointer;
+    text-color:                  @on-surface;
+}
+button selected {
+    background-color: @primary;
+    text-color: @inverse-primary;
+}
+
+/* ---- Scrollbar ---- */
+scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-width: 8px ;
+    padding:      0;
+}
+
+/* ---- Elements ---- */
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     10px;
+    border-radius:               12px;
+    background-color:            @surface-container-low;
+    cursor:                      pointer;
+}
+
+element normal.normal {    
+    background-color: @surface-container-low;
+    text-color: @on-surface;
+}
+
+element normal.active {
+    background-color: @secondary;
+    text-color: @on-primary;
+
+}
+
+element selected.normal {
+    background-color: @primary;
+    text-color: @on-primary;
+}
+
+element selected.active {
+    background-color: @secondary;
+    text-color: @on-primary;
+}
+
+// Adapt rofi theme
+element alternate.normal {
+    background-color: @surface-container-lowest;
+    text-color: @on-surface-variant;
+}
+
+element alternate.active {
+    background-color: @secondary;
+    text-color: @on-primary;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        36px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/* ---- Message ---- */
+message {
+    background-color:            transparent;
+    border:                      0px;
+}
+textbox {
+    background-color: @surface-container;
+    text-color: @on-surface;
+    padding:                     12px;
+    border-radius:               10px;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+error-message {
+    background-color: @error-container;
+    text-color: @on-error-container;
+    padding:                     12px;
+    border-radius:               20px;
+}
+/* ---- Configuration ---- */
+configuration {
+	font: "Inter Medium 10";
+}
+
+element-text {
+    font:	"Inter Medium 11";
+}
