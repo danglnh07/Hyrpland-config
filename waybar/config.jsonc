@@ -9,7 +9,7 @@
 
     "fixed-center": true,
     "reload_style_on_change": true,
-    "modules-left": ["hyprland/workspaces", "network"],
+    "modules-left": ["hyprland/workspaces", "network", "tray"],
 
     "modules-center": ["clock", "custom/notification"],
 
@@ -79,7 +79,8 @@
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "kitty -e nmtui"
+        // "on-click": "kitty -e nmtui"
+        "on-click": "nm-connection-editor"
     },
     "cpu": {
         "interval": 10,
@@ -137,5 +138,9 @@
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",
         "escape": true
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
     }
 }
